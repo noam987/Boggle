@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -6,6 +9,7 @@ public class Board {
     private WordList list;
     // constructs a new board object
     public Board(int size){
+
         list = new WordList("WordList.txt",1,size*size);
         board = new String[size][size];
         Random rand = new Random();
